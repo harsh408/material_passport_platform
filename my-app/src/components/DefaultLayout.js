@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { GlobalStyles } from '../global-styles';
+import Footer from './Footer';
 
 import Header from './header'
 import SecondHeader from './second_header'
@@ -13,6 +15,8 @@ class DefaultLayout extends Component{
                 <div fluid className='app-header'>
                     <SecondHeader/>
                 </div>
+                {/* <GlobalStyles/> */}
+                <Footer/>
             </React.Fragment>
         );
     }
