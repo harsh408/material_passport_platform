@@ -39,6 +39,7 @@
 .dropdown-toggle{
     border-radius: 0.25rem !important;
     text-align: center !important;
+    margin-top: 15px;
 }
 
 .dropdown-toggle-caret{
@@ -50,4 +51,8 @@
     background: #F2F1F9;
     border: none;
     padding : 0.5rem;
+}
+
+.margin-right-16px{
+    margin-right: 20px;
 }

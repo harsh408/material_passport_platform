@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import DefaultLayout from './DefaultLayout'
+import DefaultLayout from './components/DefaultLayout'
 import './scss/style.css'
 
 function App() {

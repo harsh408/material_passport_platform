@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Nav} from 'reactstrap';
 
-import logo from './utils/logo.jpg';
+import logo from './../utils/logo.jpg';
 
 import Dropdown from './dropdown'
 import Searchbar from './search_bar'
