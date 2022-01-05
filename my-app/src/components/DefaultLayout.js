@@ -4,6 +4,7 @@ import Footer from './Footer';
 
 import Header from './header'
 import SecondHeader from './second_header'
+import ThirdHeader from './third_header'
 
 class DefaultLayout extends Component{
     render(){
@@ -16,6 +17,9 @@ class DefaultLayout extends Component{
                     <SecondHeader/>
                 </div>
                 {/* <GlobalStyles/> */}
+                <div fluid className='app-header'>
+                    <ThirdHeader/>
+                </div>
                 <Footer/>
             </React.Fragment>
         );
