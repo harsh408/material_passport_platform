@@ -59,9 +59,11 @@ Footer.SubTitle = function FooterSubTitle({children,...restProps}){
 
 
 const Container = styled.div`
-    padding: 80px 60px;
+    padding: 20px 60px;
     // background:radial-gradient(circle, rgba(92, 39, 251, 1) 0%, rgba(112,71,247,1) 100%);
     background: #D3D3D3;
+    bottom:0px;
+    left:0px;
 `
 const Wrapper = styled.div`
    display: flex;

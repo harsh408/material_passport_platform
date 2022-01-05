@@ -55,4 +55,14 @@
 
 .margin-right-16px{
     margin-right: 20px;
+} 
+
+.footer-fix{
+    position: relative;
+    bottom: 0px;
+    top: 238px;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;      
+    background:white;
 }

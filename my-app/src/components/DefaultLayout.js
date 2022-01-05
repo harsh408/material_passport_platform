@@ -10,17 +10,19 @@ class DefaultLayout extends Component{
     render(){
         return(
             <React.Fragment>
-                <div fluid className="app-header">
+                <header fluid className="app-header">
                     <Header/>
-                </div>
-                <div fluid className='app-header'>
+                </header>
+                <header fluid className='app-header'>
                     <SecondHeader/>
-                </div>
+                </header>
                 {/* <GlobalStyles/> */}
-                <div fluid className='app-header'>
+                <header fluid className='app-header'>
                     <ThirdHeader/>
-                </div>
-                <Footer/>
+                </header>
+                <footer className='footer-fix'>
+                    <Footer/>
+                </footer>
             </React.Fragment>
         );
     }
