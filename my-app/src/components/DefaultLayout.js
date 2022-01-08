@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Header from './header'
 import SecondHeader from './second_header'
 import ThirdHeader from './third_header'
+import Grid from './grid'
 
 class DefaultLayout extends Component{
     render(){
@@ -20,6 +21,7 @@ class DefaultLayout extends Component{
                 <header fluid className='app-header'>
                     <ThirdHeader/>
                 </header>
+                <Grid/>
                 <footer className='footer-fix'>
                     <Footer/>
                 </footer>
