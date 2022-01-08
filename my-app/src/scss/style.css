@@ -11,11 +11,10 @@
 }
 
 .logo-img{
-    width: 50px;
-    height: 35px;
+    width: 70px;
+    height: 40px;
     margin-left: 12px;
     margin-bottom: 2px;
-    margin-right: 8px;
 }
 
 .app-header{
@@ -34,12 +33,21 @@
 
 .view-as-dropdown{
     min-width: 425px !important;
+    background-color: white;
 }
 
 .dropdown-toggle{
     border-radius: 0.25rem !important;
     text-align: center !important;
     margin-top: 15px;
+    border-color: #0a2119;
+    font-weight: bold;
+    font-size: medium;
+    color: #0d3811;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    border-style: none;
 }
 
 .dropdown-toggle-caret{
@@ -47,15 +55,22 @@
 }
 
 .bar-styling{
-    width: 20rem;
-    background: #F2F1F9;
-    border: none;
+    width: 50rem;
+    background: white;
+    border-radius: 0.25rem !important;
+    border-style: groove;
+    border-color: #0a2119;
     padding : 0.5rem;
+    max-height: 25px;
 }
 
 .margin-right-16px{
     margin-right: 20px;
-} 
+}
+
+.text-color{
+    color: #0d3811;
+}
 
 .footer-fix{
     position: relative;
@@ -65,4 +80,22 @@
     margin:0;
     padding:0;      
     background:white;
+}
+
+.login-button{
+    padding : 1rem;
+    border-radius: 0.5rem !important;
+    font-weight: bold;
+    font-size: medium;
+    color: #0d3811;
+    background-color: white;
+    max-height: 50px;
+    text-align: center;
+    border-color: #0a2119;
+    margin-right: 10px;
+    max-width: 80px;
+}
+
+.padding{
+    padding: 20px;
 }

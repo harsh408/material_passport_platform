@@ -4,7 +4,7 @@ class ThirdHeader extends Component{
     render(){
         return(
             <React.Fragment>
-                <p>
+                <p className='text-color'>
                     Popular search: Recycled concrete aggregates - Recycled Bricks - Steel Windows & Doors - Wooden Beams & Posts  - Staircase ...
                 </p>
             </React.Fragment>

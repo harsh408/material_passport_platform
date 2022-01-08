@@ -61,7 +61,7 @@ Footer.SubTitle = function FooterSubTitle({children,...restProps}){
 const Container = styled.div`
     padding: 20px 60px;
     // background:radial-gradient(circle, rgba(92, 39, 251, 1) 0%, rgba(112,71,247,1) 100%);
-    background: #D3D3D3;
+    background: #f2f5f4;
     bottom:0px;
     left:0px;
 `
@@ -87,10 +87,11 @@ const Title = styled.div`
     font-size:16px;
     font-weight:bold;
     font-color:blue;  
-    margin-bottom: 5px;  
+    margin-bottom: 5px;
+    color: #0a2119;
 `
 const SubTitle = styled.div`
-    color: blue;
+    color: #85948f;
     margin-bottom: 5px;
     font-size:12px;
     text-decoration:none;
