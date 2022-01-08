@@ -14,7 +14,7 @@
     width: 70px;
     height: 40px;
     margin-left: 12px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 .app-header{
@@ -32,11 +32,13 @@
 }
 
 .view-as-dropdown{
-    min-width: 425px !important;
+    min-width: 200px !important;
     background-color: white;
+    cursor: pointer;
 }
 
 .dropdown-toggle{
+    height: 20px;
     border-radius: 0.25rem !important;
     text-align: center !important;
     margin-top: 15px;
@@ -48,10 +50,13 @@
     position: relative;
     text-align: center;
     border-style: none;
+    cursor: pointer;
 }
 
 .dropdown-toggle-caret{
     float: right !important;
+    
+
 }
 
 .bar-styling{
@@ -66,6 +71,11 @@
 
 .margin-right-16px{
     margin-right: 20px;
+    cursor: pointer;
+}
+
+.margin-left-16px{
+    margin-left: 70px;
 }
 
 .text-color{
@@ -75,7 +85,7 @@
 .footer-fix{
     position: relative;
     bottom: 0px;
-    top: 238px;
+    top: 20px;
     box-sizing:border-box;
     margin:0;
     padding:0;      
@@ -94,8 +104,52 @@
     border-color: #0a2119;
     margin-right: 10px;
     max-width: 80px;
+    cursor: pointer;
 }
 
 .padding{
     padding: 20px;
 }
+
+.form-slider{
+    color:#0a2119;
+
+}
+
+
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #01052c;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {StyledButton} from './login_buttons'
 
 class SellButton extends Component{
     render(){

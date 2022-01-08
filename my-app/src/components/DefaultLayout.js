@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import { GlobalStyles } from '../global-styles';
 import Footer from './Footer';
-
+import styled from 'styled-components';
 import Header from './header'
 import SecondHeader from './second_header'
 import ThirdHeader from './third_header'
 import Grid from './grid'
+import SideNavigation from './SideNavigation';
 
 class DefaultLayout extends Component{
     render(){
@@ -17,11 +17,13 @@ class DefaultLayout extends Component{
                 <header fluid className='app-header'>
                     <SecondHeader/>
                 </header>
-                {/* <GlobalStyles/> */}
                 <header fluid className='app-header'>
                     <ThirdHeader/>
                 </header>
+                <ContentWrapper>
+                <SideNavigation/>
                 <Grid/>
+                </ContentWrapper>
                 <footer className='footer-fix'>
                     <Footer/>
                 </footer>
@@ -29,5 +31,10 @@ class DefaultLayout extends Component{
         );
     }
 }
+
+const ContentWrapper = styled.section`
+    display:flex;
+    flex-direction:row;
+`
 
 export default DefaultLayout;

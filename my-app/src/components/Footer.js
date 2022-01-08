@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 //import { Container, Wrapper } from 'reactstrap'
+import Icon from '../components/icons'
 
 const Footer = ({children, ...restProps}) => {
     return (
@@ -29,10 +30,17 @@ const Footer = ({children, ...restProps}) => {
                 </Footer.Column>
                 <Footer.Column>
                     <Footer.Title>Follow Us</Footer.Title>
-                    <Footer.SubTitle>Facebook</Footer.SubTitle>
-                    <Footer.SubTitle>Instagram</Footer.SubTitle>
-                    <Footer.SubTitle>Twitter</Footer.SubTitle>
-                    <Footer.SubTitle>Play</Footer.SubTitle>
+                    <Footer.SubTitle>
+                        <Icon className="fab fa-facebook-f"/>
+                        <Icon className="fab fa-instagram"/>
+                        <Icon className="fab fa-twitter"/>
+                        <Icon className="fab fa-youtube"/>
+                    </Footer.SubTitle>
+                    <Footer.SubTitle>
+                        <Icon className="fab fa-app-store"/>
+                        <Icon className="fab fa-google-play"/>
+                    </Footer.SubTitle>
+                    
                 </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>
@@ -83,7 +91,7 @@ const Column = styled.div`
     text-align: left;
     margin-left: 60px;
 `
-const Title = styled.div`
+export const Title = styled.div`
     font-size:16px;
     font-weight:bold;
     font-color:blue;  

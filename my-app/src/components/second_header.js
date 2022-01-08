@@ -8,7 +8,7 @@ class SecondHeader extends Component{
             <React.Fragment>
                 <div className='row-flex'>
                     <Dropdown content={"ALL CATEGORIES"}/>
-                    <p className='margin-right-16px text-color'>Door</p>
+                    <p className='margin-right-16px margin-left-16px text-color'>Door</p>
                     <p className='margin-right-16px text-color'>Window</p>
                     <p className='margin-right-16px text-color'>Beams</p>
                     <p className='margin-right-16px text-color'>Columns</p>
