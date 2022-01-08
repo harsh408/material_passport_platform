@@ -4,10 +4,12 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import IconButton from '@material-ui/core/IconButton';
-import InfoIcon from '@material-ui/icons/Info';
-import tileData from './tile_data';
-import image from './image_1.jpeg'
+import image_1 from './../utils/image_1.jpeg'
+import image_2 from './../utils/image_2.jpeg'
+import image_3 from './../utils/image_3.jpeg'
+import image_4 from './../utils/image_4.jpeg'
+import image_5 from './../utils/image_5.jpeg'
+import image_6 from './../utils/image_6.jpeg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: 1000,
-    height: 1000,
+    width: 800,
+    height: 800,
   },
   titleBar: {
     background:
@@ -35,24 +37,91 @@ export default function TitlebarGridList() {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={300}  spacing={30} className={classes.gridList}>
-        <GridListTile key="Subheader" cols={4} style={{ height: 'auto' }}>
+      <GridList cellHeight={200}  spacing={30} className={classes.gridList}>
+        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
           <ListSubheader component="div"></ListSubheader>
         </GridListTile>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
+        {/* {tileData.map((tile) => ( */}
+          <GridListTile>
             {/* <img src={tile.img} alt={tile.title} /> */}
-            <img src={image} alt={tile.title} />
+            <img src={image_1} alt="Door" />
             <GridListTileBar
-              title={tile.title}
-              actionIcon={
-                <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
-              }
+              title="Door"
+              subtitle="Rs xxxxxx"
+              // actionIcon={
+              //   <IconButton aria-label={`info about Door`} className={classes.icon}>
+              //     <InfoIcon />
+              //   </IconButton>
+              // }
             />
           </GridListTile>
-        ))}
+          <GridListTile>
+            {/* <img src={tile.img} alt={tile.title} /> */}
+            <img src={image_2} alt="Door" />
+            <GridListTileBar
+              title="Window"
+              subtitle="Rs xxxxx"
+              // actionIcon={
+              //   <IconButton aria-label={`info about Door`} className={classes.icon}>
+              //     <InfoIcon />
+              //   </IconButton>
+              // }
+            />
+          </GridListTile>
+          <GridListTile>
+            {/* <img src={tile.img} alt={tile.title} /> */}
+            <img src={image_3} alt="Door" />
+            <GridListTileBar
+              title="Bricks"
+              subtitle="Rs xxxxxx"
+              // actionIcon={
+              //   <IconButton aria-label={`info about Door`} className={classes.icon}>
+              //     <InfoIcon />
+              //   </IconButton>
+              // }
+            />
+          </GridListTile>
+          <GridListTile>
+            {/* <img src={tile.img} alt={tile.title} /> */}
+            <img src={image_4} alt="Door" />
+            <GridListTileBar
+              title="Gravel"
+              subtitle="Rs xxxxxx"
+              // actionIcon={
+              //   <IconButton aria-label={`info about Door`} className={classes.icon}>
+              //     <InfoIcon />
+              //   </IconButton>
+              // }
+            />
+          </GridListTile>
+          <GridListTile>
+            {/* <img src={tile.img} alt={tile.title} /> */}
+            <img src={image_5} alt="Door" />
+            <GridListTileBar
+              title="Pillar"
+              subtitle="xxxxxxx"
+              // actionIcon={
+              //   <IconButton aria-label={`info about Door`} className={classes.icon}>
+              //     <InfoIcon />
+              //   </IconButton>
+              // }
+            />
+          </GridListTile>
+          <GridListTile>
+            {/* <img src={tile.img} alt={tile.title} /> */}
+            <img src={image_6} alt="Door" />
+            <GridListTileBar
+              title="Window"
+              subtitle="Rs xxxxxx"
+              // actionIcon={
+              //   <IconButton aria-label={`info about Door`} className={classes.icon}>
+              //     <InfoIcon />
+              //   </IconButton>
+              // }
+            />
+          </GridListTile>
+        ))
+        {/* } */}
       </GridList>
     </div>
   );
