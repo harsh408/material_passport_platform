@@ -34,21 +34,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const onClickHandler = () =>{
-  return(
-    <>
-      
-    </>
-  )
-  
-}
+
 
 
 export default function TitlebarGridList() {
   const classes = useStyles();
   const [showModal,setShowModal] = useState(false)
-  const openModal = () => {
-    setShowModal(prev => !prev)
+  const [selectImage,setSelectImage] = useState('')
+  const openModal = (image) => {
+    setShowModal(prev => !prev)   
+    setSelectImage(image)
   }
   return (
     <div className={classes.root}>
@@ -57,50 +52,59 @@ export default function TitlebarGridList() {
           <ListSubheader component="div"></ListSubheader>
         </GridListTile>
           <GridListTile>
-            <img src={image_1} alt="Door" onClick={openModal} />
+            <img src={image_1} alt="Door" onClick={()=>openModal('image_1')} />
             <GridListTileBar
               title="Door"
               subtitle="Rs xxxxxx"
-            />
+            />            
           </GridListTile>
           <GridListTile>
-            <img src={image_2} alt="Door" />
+            <img src={image_2} alt="Door" onClick={()=>openModal('image_2')}/>
             <GridListTileBar
-              title="Window"
+              title="Concrete Floor Slab"
               subtitle="Rs xxxxx"
             />
           </GridListTile>
           <GridListTile>
-            <img src={image_3} alt="Door" />
+            <img src={image_3} alt="Door" onClick={()=>openModal('image_3')}/>
             <GridListTileBar
               title="Bricks"
               subtitle="Rs xxxxxx"
             />
+           
           </GridListTile>
           <GridListTile>
-            <img src={image_4} alt="Door" />
+            <img src={image_4} alt="Door" onClick={()=>openModal('image_4')}/>
             <GridListTileBar
               title="Gravel"
               subtitle="Rs xxxxxx"
             />
+            
           </GridListTile>
           <GridListTile>
-            <img src={image_5} alt="Door" />
+            <img src={image_5} alt="Door" onClick={()=>openModal('image_5')}/>
             <GridListTileBar
               title="Pillar"
               subtitle="Rs xxxxxxx"
             />
+            
           </GridListTile>
           <GridListTile>
-            <img src={image_6} alt="Door" />
+            <img src={image_6} alt="Door" onClick={()=>openModal('image_6')}/>
             <GridListTileBar
               title="Window"
               subtitle="Rs xxxxxx"
             />
+            
           </GridListTile>
         ))
       </GridList>
-      <Modal showModal={showModal} setShowModal={setShowModal}></Modal>
+    {selectImage === 'image_1'&&<Modal showModal={showModal} setShowModal={setShowModal} image={image_1} description={'Best quality Doors at best range of prices available at our store'}></Modal> }
+    {selectImage === 'image_2'&&<Modal showModal={showModal} setShowModal={setShowModal} image={image_2} description={'Best quality Concrete floor slab at best range of prices available at our store'}></Modal>}      
+    {selectImage === 'image_3'&&<Modal showModal={showModal} setShowModal={setShowModal} image={image_3} description={'Best quality Bricks at best range of prices available at our store'}></Modal>}      
+    {selectImage === 'image_4'&&<Modal showModal={showModal} setShowModal={setShowModal} image={image_4} description={'Best quality Gravel at best range of prices available at our store'}></Modal>}      
+    {selectImage === 'image_5'&&<Modal showModal={showModal} setShowModal={setShowModal} image={image_5} description={'Best quality Pillars at best range of prices available at our store'}></Modal>}      
+    {selectImage === 'image_6'&&<Modal showModal={showModal} setShowModal={setShowModal} image={image_6} description={'Best quality Window at best range of prices available at our store'}></Modal>}       
     </div>
   );
 }
