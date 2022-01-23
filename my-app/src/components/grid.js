@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
@@ -10,6 +10,8 @@ import image_3 from './../utils/image_3.jpeg'
 import image_4 from './../utils/image_4.jpeg'
 import image_5 from './../utils/image_5.jpeg'
 import image_6 from './../utils/image_6.jpeg'
+import styled from 'styled-components'
+import Modal from './Modal';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,9 +34,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const onClickHandler = () =>{
+  return(
+    <>
+      
+    </>
+  )
+  
+}
+
+
 export default function TitlebarGridList() {
   const classes = useStyles();
-
+  const [showModal,setShowModal] = useState(false)
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
   return (
     <div className={classes.root}>
       <GridList cellHeight={200}  spacing={30} className={classes.gridList}>
@@ -42,7 +57,7 @@ export default function TitlebarGridList() {
           <ListSubheader component="div"></ListSubheader>
         </GridListTile>
           <GridListTile>
-            <img src={image_1} alt="Door" />
+            <img src={image_1} alt="Door" onClick={openModal} />
             <GridListTileBar
               title="Door"
               subtitle="Rs xxxxxx"
@@ -85,6 +100,8 @@ export default function TitlebarGridList() {
           </GridListTile>
         ))
       </GridList>
+      <Modal showModal={showModal} setShowModal={setShowModal}></Modal>
     </div>
   );
 }
+
